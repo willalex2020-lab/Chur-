@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chur Counter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #333;
+    }
+
+    #counter {
+      font-size: 4rem;
+      margin: 20px 0;
+      color: #007BFF;
+    }
+
+    button {
+      font-size: 2rem;
+      padding: 10px 30px;
+      border: none;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Chur Counter</h1>
+  <div id="counter">0</div>
+  <button onclick="incrementCounter()">Chur</button>
+
+  <script>
+    let count = 0;
+
+    function incrementCounter() {
+      count++;
+      document.getElementById('counter').innerText = count;
+    }
+  </script>
+
+</body>
+</html>
